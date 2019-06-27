@@ -15,6 +15,15 @@ class App extends Component {
     };
   }
 
+  crossProduct() {
+
+    const mm1 = ['dsds', 'dsds'];
+    const mm2 = ['xx', 'yy'];
+
+    return R.xprod(mm1, mm2);
+
+  }
+
 
   ramdaTestFunc() {
 
@@ -27,7 +36,9 @@ class App extends Component {
     console.log(res1);
     // END of Ramda code
 
-    return <div>ramdaTestFunc</div>
+    const cpr= this.crossProduct();
+
+    return <div>ramdaTestFunc: xprod (cross product) : {cpr}</div>
   }
 
   render() {
