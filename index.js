@@ -7,6 +7,11 @@ import * as R from 'ramda';
 import {Maybe} from 'ramda-fantasy';
 
 
+import LevTest from './LevTest'
+
+// Reference:
+// https://www.npmjs.com/package/fast-levenshtein
+
 class App extends Component {
   constructor() {
     super();
@@ -50,6 +55,8 @@ class App extends Component {
           Start editing to see some magic happen :)
         </p>
         { this.ramdaTestFunc()}
+        <p/>
+        LevTest: <LevTest/>
       </div>
     );
   }
