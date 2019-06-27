@@ -3,17 +3,9 @@ import { render } from 'react-dom';
 import Hello from './Hello';
 import './style.css';
 
-
-// BEGIN of Ramda code
 import * as R from 'ramda';
 import {Maybe} from 'ramda-fantasy';
 
-const initial2 = ['dsds', 'dsds'];
-
-const rt = Maybe(initial2).getOrElse(['жопа']);
-const res1 = R.map(R.toUpper)(rt);
-console.log(res1);
-// END of Ramda code
 
 class App extends Component {
   constructor() {
@@ -23,6 +15,21 @@ class App extends Component {
     };
   }
 
+
+  ramdaTestFunc() {
+
+    // BEGIN of Ramda code
+
+    const initial2 = ['dsds', 'dsds'];
+
+    const rt = Maybe(initial2).getOrElse(['жопа']);
+    const res1 = R.map(R.toUpper)(rt);
+    console.log(res1);
+    // END of Ramda code
+
+    return <div>ramdaTestFunc</div>
+  }
+
   render() {
     return (
       <div>
@@ -30,6 +37,7 @@ class App extends Component {
         <p>
           Start editing to see some magic happen :)
         </p>
+        { this.ramdaTestFunc()}
       </div>
     );
   }
