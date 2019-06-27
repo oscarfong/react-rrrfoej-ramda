@@ -24,19 +24,20 @@ class App extends Component {
 
   }
 
-
-  ramdaTestFunc() {
-
-    // BEGIN of Ramda code
-
+  oldTest1() {
     const initial2 = ['dsds', 'dsds'];
 
     const rt = Maybe(initial2).getOrElse(['жопа']);
     const res1 = R.map(R.toUpper)(rt);
     console.log(res1);
-    // END of Ramda code
+  }
+
+
+  ramdaTestFunc() {
+    this.oldTest1();
 
     const cpr= this.crossProduct();
+    console.log(cpr);
 
     return <div>ramdaTestFunc: xprod (cross product) : {cpr}</div>
   }
