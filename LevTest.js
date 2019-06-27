@@ -14,7 +14,8 @@ class LevTest extends Component {
   render() {
 
     var levenshtein = require('fast-levenshtein');
-    var distance = levenshtein.get('back', 'book');   
+    var distance = levenshtein.get('back', 'book' , { useCollator: true});
+    //     var distance = levenshtein.get('back', 'book' );   
 
     //return distance;
 
