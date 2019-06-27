@@ -3,11 +3,13 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
+    "fast-levenshtein": "^2.0.6",
     "ramda": "^0.26.1",
     "ramda-fantasy": "^0.8.0",
     "react": "^16.8.0",
     "react-bootstrap": "^0.32.4",
-    "react-dom": "^16.8.0"
+    "react-dom": "^16.8.0",
+    "typescript": "^3.5.2"
   },
   "scripts": {
     "start": "react-scripts start",
